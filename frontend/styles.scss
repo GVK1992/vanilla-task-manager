@@ -1,0 +1,29 @@
+// Use Vanilla Framework via @use instead of @import
+@use "node_modules/vanilla-framework" as vanilla;
+
+// Include all of Vanilla Framework
+@include vanilla.vanilla;
+
+// Your custom styles
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: #f7f7f7;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+button {
+  @extend .p-button;
+}
+
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
